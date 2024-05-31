@@ -1,9 +1,9 @@
-describe('Teste de busca da palavra "gov.br"', () => {
-  it('Verifica a presença da palavra "gov.br"', () => {
+describe('Teste de busca da palavra "Serviços"', () => {
+  it('Verifica a presença da palavra "Serviços"', () => {
     // Visita a página inicial do site
     cy.visit('https://www.gov.br/pt-br');
 
-    // Verifica se a palavra "gov.br" está presente na página
-    cy.contains('gov.br').should('be.visible');
+    // Verifica se a palavra "Serviços" está presente na página
+    cy.contains('Serviços').should('be.visible');
   });
 });

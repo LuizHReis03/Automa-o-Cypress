@@ -1,5 +1,5 @@
-Feature: Verificação da presença da palavra "gov.br" no site
+Feature: Verificação da presença da palavra "Serviços" no site
 
-Scenario: Verificar presença do texto "gov.br" na página inicial
+Scenario: Verificar presença do texto "Serviços" na página inicial
   Given que eu acesso a página inicial do site "https://www.gov.br/pt-br"
-  Then eu devo ver o texto "gov.br"
+  Then eu devo ver o texto "Serviços"
