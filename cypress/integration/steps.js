@@ -65,21 +65,20 @@ Then('devo ver a confirmação de sucesso', () => {
     cy.get('select').eq(6).select('AGF Praia Cabo Branco');
     cy.get('textarea[name="mensagem"]').type('Teste realizado com sucesso');
 
-    // Navegar para o site de correios
     cy.visit('https://www.correios.com.br/#');
 
-    // Preencher origem
+ 
     cy.get('input[name="origem"]').type('58037665');
 
-    // Preencher destino
+  
     cy.get('input[name="destino"]').type('69903190');
 
-    // Preencher as dimensões do pacote
+ 
     cy.get('input[name="altura"]').type('40');
     cy.get('input[name="largura"]').type('50');
     cy.get('input[name="comprimento"]').type('50');
 
-    // Clicar em Calcular Frete
+
     cy.contains('Calcular Frete').click();
 
     Given('que estou na página de login', () => {
@@ -94,7 +93,7 @@ Then('devo ver a confirmação de sucesso', () => {
     });
     
     When('eu clico no botão de login', () => {
-        // Nothing needed here since it's already covered in the previous step
+      
     });
     
     When('eu clico em "Excluir conta"', () => {
